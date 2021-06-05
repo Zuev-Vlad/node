@@ -25,13 +25,13 @@ bdConnect.connect();
 
 app.get('/api/', (request, response) => {
     console.log(`URL: ${request.url}`);
-    response.send(JSON.stringify('{success: true}'));
+    // response.send(JSON.stringify('{success: true}'));
 
-    // bdConnect.query('SELECT * FROM user', (err, res, fields) => {
-    //     console.log('result User ', res)
-    //     console.log(err)
-    //     response.send(JSON.stringify(res || err));
-    // })
+    bdConnect.query('SELECT * FROM user', (err, res, fields) => {
+        console.log('result User ', res)
+        console.log(err)
+        response.send(JSON.stringify(res || err));
+    })
 
 });
 
