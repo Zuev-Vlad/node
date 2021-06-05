@@ -2,13 +2,11 @@
 const express = require('express')
 const routerUser = express.Router()
 
-routerUser.get('/api/users/', (request, response) => {
-    console.log(`URL: ${request.url}`);
-    // response.send(JSON.stringify('{success: true}'));
+const db = require('./../../config/db')
 
-    bdConnect.query('SELECT * FROM user', (err, res, fields) => {
-        console.log('result User ', res)
-        console.log(err)
+// get all users
+routerUser.get('/api/users/', (request, response) => {
+    db.query('SELECT * FROM user', (err, res, fields) => {
         response.send(JSON.stringify(res || err));
     })
 
