@@ -1,4 +1,4 @@
 PassengerNodejs /home/v/vzuiya4u/.local/bin/node
-PassengerAppRoot /home/v/vzuiya4u/test.kupi-website.ru/public_html/
+PassengerAppRoot /home/v/vzuiya4u/test.kupi-website.ru/public_html/api/
 PassengerAppType node
 PassengerStartupFile app.js
