@@ -6,13 +6,13 @@ const db = require('../config/db')
 console.log('after')
 app.get('/api/', (request, response) => {
     console.log(`URL: ${request.url}`);
-    response.send(JSON.stringify('{success: true}'));
+    // response.send(JSON.stringify('{success: true}'));
     // response.send(JSON.stringify({ success: true, }))
-    // db.query('SELECT * FROM user', (err, res, fields) => {
-    //     console.log('result User ', res)
-    //     console.log(err)
-    //     response.send(JSON.stringify(res || err));
-    // })
+    db.query('SELECT * FROM user', (err, res, fields) => {
+        console.log('result User ', res)
+        console.log(err)
+        response.send(JSON.stringify(res || err));
+    })
 
 });
 
@@ -20,10 +20,10 @@ app.get('/api/', (request, response) => {
 app.listen(port, () => {
     console.log('Example app listening at http://localhost:' + port)
         // console.log(db)
-    db.query('SELECT * FROM user', (err, res, fields) => {
-        console.log('result User ', res)
-        console.log(err)
-    })
+        // db.query('SELECT * FROM user', (err, res, fields) => {
+        //     console.log('result User ', res)
+        //     console.log(err)
+        // })
 })
 
 // var http = require('http');
