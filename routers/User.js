@@ -1,8 +1,8 @@
 // routers for user
 const express = require('express')
-const router = express.Router()
+const routerUser = express.Router()
 
-pp.get('/api/users/', (request, response) => {
+routerUser.get('/api/users/', (request, response) => {
     console.log(`URL: ${request.url}`);
     // response.send(JSON.stringify('{success: true}'));
 
@@ -14,4 +14,4 @@ pp.get('/api/users/', (request, response) => {
 
 });
 
-module.exports = router
+module.exports = routerUser
