@@ -8,15 +8,15 @@ const routerUser = require('./../routers/User')
 console.log('after')
 
 // routerUser
-app.use('/api/users/', routerUser)
+// app.use('/api/users/', routerUser)
 
-// app.get('/api/users/', (request, response) => {
-//     db.query('SELECT * FROM user', (err, res, fields) => {
-//         console.log('result User ', res)
-//         console.log(err)
-//         response.send(JSON.stringify(res || err));
-//     })
-// });
+app.get('/api/users/', (request, response) => {
+    db.query('SELECT * FROM user', (err, res, fields) => {
+        console.log('result User ', res)
+        console.log(err)
+        response.send(JSON.stringify(res || err));
+    })
+});
 
 
 app.listen(port, () => {
