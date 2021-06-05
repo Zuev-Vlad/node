@@ -2,7 +2,7 @@ const express = require('express');
 const port = 3000;
 const app = express();
 
-const db = require('./config/db')
+const db = require('../config/db')
 
 
 app.get('/api/', (request, response) => {
