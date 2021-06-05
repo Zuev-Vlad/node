@@ -2,18 +2,18 @@ const express = require('express');
 const port = 3000;
 const app = express();
 
-// const db = require('../config/db')
+const db = require('../config/db')
 
 
 app.get('/api/', (request, response) => {
     console.log(`URL: ${request.url}`);
     // response.send(JSON.stringify('{success: true}'));
-    response.send(JSON.stringify({ success: true, request }))
-        // db.query('SELECT * FROM user', (err, res, fields) => {
-        //     console.log('result User ', res)
-        //     console.log(err)
-        //     response.send(JSON.stringify(res || err));
-        // })
+    // response.send(JSON.stringify({ success: true, }))
+    db.query('SELECT * FROM user', (err, res, fields) => {
+        console.log('result User ', res)
+        console.log(err)
+        response.send(JSON.stringify(res || err));
+    })
 
 });
 
