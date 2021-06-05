@@ -3,11 +3,20 @@ const port = 3000;
 const app = express();
 const db = require('../config/db')
 
-const routerUser = require('./users/UserRouter')
+const routerUser = require('./../routers/User')
 
+console.log('after')
 
-app.use('/api/users/', routerUser)
+// routerUser
+// app.use('/api/users/', routerUser)
 
+app.get('/api/users/', (request, response) => {
+    db.query('SELECT * FROM user', (err, res, fields) => {
+        console.log('result User ', res)
+        console.log(err)
+        response.send(JSON.stringify(res || err));
+    })
+});
 
 
 app.listen(port, () => {
