@@ -2,21 +2,17 @@ const express = require('express');
 const port = 3000;
 const app = express();
 const db = require('../config/db')
+const path = require('path')
 
-const routerUser = require('./../routers/User')
+const routerUser = require('./users/UserRouter')
 
-console.log('after')
 
 // routerUser
-// app.use('/api/users/', routerUser)
+app.use(routerUser)
 
-app.get('/api/users/', (request, response) => {
-    db.query('SELECT * FROM user', (err, res, fields) => {
-        console.log('result User ', res)
-        console.log(err)
-        response.send(JSON.stringify(res || err));
-    })
-});
+app.use((req, res) => {
+    res.sendFile(path.join(__dirname, './../', 'index.html'))
+})
 
 
 app.listen(port, () => {
