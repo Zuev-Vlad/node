@@ -14,4 +14,4 @@ pp.get('/api/users/', (request, response) => {
 
 });
 
-exports.module = router
+module.exports = router
