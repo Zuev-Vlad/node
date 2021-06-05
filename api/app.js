@@ -3,7 +3,7 @@ const port = 3000;
 const app = express();
 const db = require('../config/db')
 
-const routerUser = require('./../routers/User')
+const routerUser = require('./users/UserRouter')
 
 
 app.use('/api/users/', routerUser)
