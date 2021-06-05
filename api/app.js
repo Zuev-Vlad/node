@@ -2,9 +2,10 @@ const express = require('express');
 const port = 3000;
 const app = express();
 
+
 const db = require('../config/db')
-
-
+    // db.connect()
+console.log('after')
 app.get('/api/', (request, response) => {
     console.log(`URL: ${request.url}`);
     // response.send(JSON.stringify('{success: true}'));
