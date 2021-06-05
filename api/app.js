@@ -8,7 +8,7 @@ const routerUser = require('./../routers/User')
 console.log('after')
 
 // routerUser
-app.use('/api/users/', routerUser)
+app.use(routerUser)
 
 // app.get('/api/users/', (request, response) => {
 //     db.query('SELECT * FROM user', (err, res, fields) => {
