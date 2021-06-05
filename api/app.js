@@ -8,7 +8,7 @@ const app = express();
 app.get('/api/', (request, response) => {
     console.log(`URL: ${request.url}`);
     // response.send(JSON.stringify('{success: true}'));
-    response(JSON.stringify({ success: true, request }))
+    response.send(JSON.stringify({ success: true }))
         // db.query('SELECT * FROM user', (err, res, fields) => {
         //     console.log('result User ', res)
         //     console.log(err)
