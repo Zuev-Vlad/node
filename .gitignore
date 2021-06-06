@@ -2,5 +2,5 @@
 /tmp/*
 .vscode
 .htaccess
-/config/db
+/config/db.js
 # /config/db.js
