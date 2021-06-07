@@ -10,10 +10,10 @@ const routerUser = require('./api/users/UserRouter')
 // routerUser
 app.use(routerUser)
 
-app.use((req, res) => {
-    res.sendFile(path.join(__dirname, '/', 'public/index.html'))
-})
-
+// app.use((req, res) => {
+//     res.sendFile(path.join(__dirname, '/', 'public/index.html'))
+// })
+app.use(express.static('/public/'));
 
 app.listen(port, () => {
     console.log('Example app listening at http://localhost:' + port)
