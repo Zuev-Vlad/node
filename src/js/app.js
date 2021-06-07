@@ -1,15 +1,38 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import {Switch, Route} from 'react-router-dom'
+import {Switch, Route, BrowserRouter} from 'react-router-dom'
+
+// redux
+import { compose, createStore } from 'redux';
+import { rootReducer } from './redux/rootReducer';
+import { Provider } from 'react-redux';
+// component
+import { ContentAuth } from './PageContent/ContentAuth';
 import { ContentIndex } from './PageContent/ContentIndex';
+import { ContentPersonal } from './PageContent/ContentPersonal';
+import { HeaderMenu } from './components/HeaderMenu/HeaderMenu';
+// style
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+const APP_STORE = createStore(rootReducer, compose(
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+))
 
 export const App = () => {
     return (
-      <Switch>
-          <Route history={history} path='/' component={ContentIndex} />
-      </Switch>
+      <Provider store={APP_STORE}>
+      <header>
+        <HeaderMenu />
+      </header>
+          <BrowserRouter>
+            <Switch>
+                <Route exact  path='/' component={ContentIndex} />
+                <Route path='/auth/' component={ContentAuth} />
+                <Route path='/personal' component={ContentPersonal} />
+            </Switch>
+          </BrowserRouter>
+          </Provider>
     )
 }
 
