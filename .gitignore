@@ -3,4 +3,4 @@
 .vscode
 .htaccess
 config/db.js
-/tmp/**
+/tmp/*
