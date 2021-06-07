@@ -1,9 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
+import {Switch, Route} from 'react-router-dom'
+import { ContentIndex } from './PageContent/ContentIndex';
+
+
 
 export const App = () => {
     return (
-        <h1>Hello world</h1>
+      <Switch>
+          <Route history={history} path='/' component={ContentIndex} />
+      </Switch>
     )
 }
 
