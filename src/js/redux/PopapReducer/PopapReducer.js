@@ -17,6 +17,7 @@ const initialState = {
 }
 
 export const PopapReducer = (state = initialState, action) => {
+    console.log('PopapReducer', { state, action })
     switch (action) {
         case SET_IS_OPEN_POPAP:
             return {...state, isOpen: action.payload }

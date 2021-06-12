@@ -10,9 +10,11 @@ import { Provider } from 'react-redux';
 import { ContentAuth } from './PageContent/ContentAuth';
 import { ContentIndex } from './PageContent/ContentIndex';
 import { ContentPersonal } from './PageContent/ContentPersonal';
-import { HeaderMenu } from './components/HeaderMenu/HeaderMenu';
+import HeaderMenu  from './components/HeaderMenu/HeaderMenu';
 // style
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Popap from './components/Popap/Popap';
+
 
 
 const APP_STORE = createStore(rootReducer, compose(
@@ -32,6 +34,7 @@ export const App = () => {
                 <Route path='/personal' component={ContentPersonal} />
             </Switch>
           </BrowserRouter>
+          <Popap />
           </Provider>
     )
 }
