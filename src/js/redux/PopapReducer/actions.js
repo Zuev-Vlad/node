@@ -13,7 +13,7 @@ export const setOnClosePopap = (onClose = () => false) => {
 }
 
 export const setIsOpenPopap = (isOpen = false) => {
-    console.log('actions setIsOpenPopap ', isOpen)
+    console.log({ SET_IS_OPEN_POPAP, isOpen })
     return {
         type: SET_IS_OPEN_POPAP,
         payload: isOpen

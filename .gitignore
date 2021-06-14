@@ -4,3 +4,5 @@
 .htaccess
 config/db.js
 /tmp/*
+/src/images
+/src/fonts

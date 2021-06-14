@@ -5,7 +5,8 @@ import {
     SET_ON_SAVE_POPAP,
     SET_ON_CLOSE_POPAP,
     SET_SIZE_POPAP
-} from "./actions";
+} from "./types";
+
 
 const initialState = {
     isOpen: true,
@@ -17,8 +18,8 @@ const initialState = {
 }
 
 export const PopapReducer = (state = initialState, action) => {
-    console.log('PopapReducer', { state, action })
-    switch (action) {
+    console.log('reducer', action.type)
+    switch (action.type) {
         case SET_IS_OPEN_POPAP:
             return {...state, isOpen: action.payload }
         case SET_TITLE_POPAP:

@@ -14,7 +14,7 @@ import HeaderMenu  from './components/HeaderMenu/HeaderMenu';
 // style
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Popap from './components/Popap/Popap';
-
+import '../less/common.less';
 
 
 const APP_STORE = createStore(rootReducer, compose(
