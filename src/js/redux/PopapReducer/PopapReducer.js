@@ -9,7 +9,7 @@ import {
 
 
 const initialState = {
-    isOpen: true,
+    isOpen: false,
     title: 'Заголовок',
     content: 'Контент',
     onSave: () => alert('save'),
