@@ -8,11 +8,10 @@ const routerUser = require('./api/users/UserRouter')
 
 
 // routerUser
-app.use(routerUser)
 
-// app.use((req, res) => {
-//     res.sendFile(path.join(__dirname, '/', 'public/index.html'))
-// })
+app.use('/api/users/', routerUser)
+
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 
