@@ -2,20 +2,23 @@
 const express = require('express')
 const routerUser = express.Router()
 
-const db = require('./../../config/db')
-
+const dbConnect = require('./../../config/db')
+const urlencodedParser = express.urlencoded({ extended: false });
 // get all users
 
 routerUser.get('/', (req, res) => {
-    res.send(JSON.stringify({ success: true }))
+    dbConnect.query('SELECT * FROM `user`', (error, result, fields) => {
+        if (error) throw error;
+        res.send(result)
+    })
+    dbConnect.end()
 })
 
-// routerUser.route('/api/users/', (request, response) => {
-//     response.send(JSON.stringify({ success: true }))
-//     // db.query('SELECT * FROM user', (err, res, fields) => {
-//     //     response.send(JSON.stringify(res || err));
-//     // })
+routerUser.post('/', urlencodedParser, (req, res) => {
+    if (!req.body) return response.sendStatus(400);
+    console.log({ req: req.body })
+    return res.send('true')
+})
 
-// });
 
 module.exports = routerUser

@@ -1,0 +1,44 @@
+[Thu Sep 09 20:04:13.543081 2021] [proxy:error] [pid 945] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:04:13.543203 2021] [proxy_http:error] [pid 945] [client 127.0.0.1:34192] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Thu Sep 09 20:04:13.731226 2021] [proxy:error] [pid 946] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:04:13.731316 2021] [proxy_http:error] [pid 946] [client 127.0.0.1:34196] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Thu Sep 09 20:04:38.638893 2021] [proxy:error] [pid 948] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:04:38.638980 2021] [proxy_http:error] [pid 948] [client 127.0.0.1:34226] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Thu Sep 09 20:04:38.665712 2021] [proxy:error] [pid 947] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:04:38.665795 2021] [proxy_http:error] [pid 947] [client 127.0.0.1:34230] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Thu Sep 09 20:05:02.966291 2021] [proxy:error] [pid 4300] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:05:02.966439 2021] [proxy_http:error] [pid 4300] [client 127.0.0.1:34238] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Thu Sep 09 20:05:02.994747 2021] [proxy:error] [pid 4302] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:05:02.994822 2021] [proxy_http:error] [pid 4302] [client 127.0.0.1:34242] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Thu Sep 09 20:05:16.140779 2021] [proxy:error] [pid 4303] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:05:16.140876 2021] [proxy_http:error] [pid 4303] [client 127.0.0.1:34318] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Thu Sep 09 20:05:16.187841 2021] [proxy:error] [pid 4304] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:05:16.187923 2021] [proxy_http:error] [pid 4304] [client 127.0.0.1:34322] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Thu Sep 09 20:09:09.264686 2021] [proxy:error] [pid 4301] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:09:09.264799 2021] [proxy_http:error] [pid 4301] [client 127.0.0.1:36280] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Thu Sep 09 20:09:09.298765 2021] [proxy:error] [pid 4300] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:09:09.298845 2021] [proxy_http:error] [pid 4300] [client 127.0.0.1:36284] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Thu Sep 09 20:10:10.667648 2021] [proxy:error] [pid 4738] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:10:10.667737 2021] [proxy_http:error] [pid 4738] [client 127.0.0.1:36768] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Thu Sep 09 20:10:17.772261 2021] [proxy:error] [pid 4739] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:10:17.772378 2021] [proxy_http:error] [pid 4739] [client 127.0.0.1:36828] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Thu Sep 09 20:42:17.322967 2021] [proxy:error] [pid 5588] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:42:17.323103 2021] [proxy_http:error] [pid 5588] [client 127.0.0.1:52584] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Thu Sep 09 20:42:48.325751 2021] [proxy_http:error] [pid 5571] (20014)Internal error (specific information not available): [client 127.0.0.1:52662] AH01102: error reading status line from remote server 127.0.0.1:8081, referer: http://mysite.ru/
+[Thu Sep 09 20:42:48.325874 2021] [proxy:error] [pid 5571] [client 127.0.0.1:52662] AH00898: Error reading from remote server returned by /api/user/, referer: http://mysite.ru/
+[Thu Sep 09 20:49:52.304364 2021] [proxy:error] [pid 5570] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 20:49:52.304495 2021] [proxy_http:error] [pid 5570] [client 127.0.0.1:56378] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Thu Sep 09 21:28:08.448783 2021] [proxy:error] [pid 5588] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Thu Sep 09 21:28:08.448888 2021] [proxy_http:error] [pid 5588] [client 127.0.0.1:46830] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Wed Sep 15 21:52:36.583183 2021] [proxy:error] [pid 890] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Wed Sep 15 21:52:36.583524 2021] [proxy_http:error] [pid 890] [client 127.0.0.1:59920] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Sep 15 21:52:36.641216 2021] [proxy:error] [pid 888] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Wed Sep 15 21:52:36.641319 2021] [proxy_http:error] [pid 888] [client 127.0.0.1:59924] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Wed Sep 15 21:53:11.595001 2021] [proxy:error] [pid 9669] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Wed Sep 15 21:53:11.595112 2021] [proxy_http:error] [pid 9669] [client 127.0.0.1:59930] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Sep 15 21:53:11.649674 2021] [proxy:error] [pid 9670] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Wed Sep 15 21:53:11.649745 2021] [proxy_http:error] [pid 9670] [client 127.0.0.1:59934] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
+[Wed Sep 15 21:53:36.249357 2021] [proxy:error] [pid 9671] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Wed Sep 15 21:53:36.249451 2021] [proxy_http:error] [pid 9671] [client 127.0.0.1:60090] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Wed Sep 15 21:53:36.306771 2021] [proxy:error] [pid 9672] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8081 (127.0.0.1) failed
+[Wed Sep 15 21:53:36.306863 2021] [proxy_http:error] [pid 9672] [client 127.0.0.1:60094] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://mysite.ru/
