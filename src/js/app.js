@@ -17,6 +17,8 @@ import './../css/templatemo-host-cloud.css';
 import Popap from './components/Popap/Popap';
 import '../less/common.less';
 import { PageContainer } from './HOC/PageContainer/PageContainer';
+import { ContentTypeScript } from './PageContent/ContentTypeScript/ContentTypeScript.tsx';
+
 
 
 const APP_STORE = createStore(rootReducer, compose(
@@ -24,34 +26,39 @@ const APP_STORE = createStore(rootReducer, compose(
 ))
 
 export const App = () => {
-    return ( 
-    <Provider store = { APP_STORE } >
-        <header className = "header" >
-            <HeaderMenu />
-        </header>
+    return (
+        <Provider store={APP_STORE} >
+            <header className="header" >
+                <HeaderMenu />
+            </header>
 
-        <BrowserRouter >
-        <Switch >
-        <PageContainer arrayClass = {
-            [] } >
-        <Route exact path = '/'
-        component = { ContentIndex }
-        /> 
-        <Route path = '/auth/'
-        component = { ContentAuth }
-        /> 
-        <Route path = '/personal'
-        component = { ContentPersonal }
-        /> 
-        </PageContainer> </Switch> </BrowserRouter> <Popap />
+            <BrowserRouter >
+                <Switch >
+                    <PageContainer arrayClass={[]} >
+                        <Route exact path='/'
+                            component={ContentIndex}
+                        />
+                        <Route path='/auth/'
+                            component={ContentAuth}
+                        />
+                        <Route path='/personal'
+                            component={ContentPersonal}
+                        />
+                        <Route path='/type-script'
+                            component={<ContentTypeScript/>}
+                        />
+                    </PageContainer>
+                </Switch>
+            </BrowserRouter>
+            <Popap />
         </Provider>
     )
 }
 
-ReactDOM.render( <React.StrictMode >
+ReactDOM.render(<React.StrictMode >
 
     <App />
 
-    </React.StrictMode>,
-        document.getElementById('app')
+</React.StrictMode>,
+    document.getElementById('app')
 );
