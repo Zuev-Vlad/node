@@ -1,7 +1,6 @@
 const express = require('express');
 const port = 8081;
 const app = express();
-const db = require('./config/db')
 const path = require('path')
 
 const routerUser = require('./api/users/UserRouter')
