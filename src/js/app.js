@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom';
 import { Switch, Route, BrowserRouter } from 'react-router-dom'
 
@@ -13,11 +13,14 @@ import { ContentPersonal } from './PageContent/ContentPersonal';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 // style
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './../css/templatemo-host-cloud.css';
 import Popap from './components/Popap/Popap';
 import '../less/common.less';
 import { PageContainer } from './HOC/PageContainer/PageContainer';
 import { ContentTypeScript } from './PageContent/ContentTypeScript/ContentTypeScript.tsx';
+import { APP_MODEL } from './Model/AppModel';
+import { checkRespForSuccess } from './Libs/Common';
+import { Header } from './components/Header/Header.tsx';
+
 
 
 
@@ -26,11 +29,20 @@ const APP_STORE = createStore(rootReducer, compose(
 ))
 
 export const App = () => {
+    // Получить меню
+    useEffect(() => {
+        APP_MODEL.getMenu().then(r => {
+            if (checkRespForSuccess(r)) {
+                APP_STORE.dispatch(setMainMenu(r.data))
+            }
+        })
+    }, [])
+
+
     return (
         <Provider store={APP_STORE} >
-            <header className="header" >
-                <HeaderMenu />
-            </header>
+
+            <Header />
 
             <BrowserRouter >
                 <Switch >
@@ -45,7 +57,7 @@ export const App = () => {
                             component={ContentPersonal}
                         />
                         <Route path='/type-script'
-                            component={<ContentTypeScript/>}
+                            component={<ContentTypeScript />}
                         />
                     </PageContainer>
                 </Switch>
