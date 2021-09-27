@@ -8,17 +8,4 @@ body {
   background-color: #020A18;
 }
 
-.transparent-header {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 9;
-}
-.header-wrap {
-  box-shadow: 0px 19px 55px 0px rgba(98, 81, 146, 0.08);
-  margin: 50px 285px 0;
-  border-radius: 10px;
-  background: #fff;
-}
 

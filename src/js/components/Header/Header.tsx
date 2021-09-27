@@ -1,26 +1,26 @@
 import * as React from 'react'
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { HeaderMenu } from '../HeaderMenu/HeaderMenu';
 
 import './header.less'
+import { Logo } from './Logo/Logo';
 
 
 export const Header = () => {
     return (
-        <header className="header transparent-header">
-            <div className="header-wrap">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-3">
-                            <div className="logo">
-                                <a href="index.html">
-                                    <img src="img/logo/logo.png" alt="Logo" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <HeaderMenu />
+        <header className="header">
+            <Navbar bg="light" expand="lg">
+                <Container>
+
+                    <Navbar.Brand href="#home">
+                        <Logo src="/uploads/myLogo.png" />
+                    </Navbar.Brand>
+                   
+                    <HeaderMenu />
+                </Container>
+            </Navbar>
+            
+            
         </header>
     )
 }
