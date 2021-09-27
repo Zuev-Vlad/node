@@ -51,7 +51,9 @@ module.exports = (env, argv) => {
                 'process.env.NODE_ENV': JSON.stringify(ENV)
             })
         ],
-
+        resolve: {
+            extensions: ['.js', ".json", ".jsx", ".ts", ".tsx", ],
+        },
         module: {
             rules: [{
                     test: /\.m?js$/,
