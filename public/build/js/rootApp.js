@@ -74,17 +74,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/js/HOC/PageContainer/PageContainer.js":
-/*!***************************************************!*\
-  !*** ./src/js/HOC/PageContainer/PageContainer.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"PageContainer\": () => (/* binding */ PageContainer)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ \"./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar PageContainer = function PageContainer(props) {\n  var classNames = [].concat((0,_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(props.arrayClass), ['container']);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: classNames.join(\" \")\n  }, props.children);\n};\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/HOC/PageContainer/PageContainer.js?");
-
-/***/ }),
-
 /***/ "./src/js/Libs/Common.js":
 /*!*******************************!*\
   !*** ./src/js/Libs/Common.js ***!
@@ -118,17 +107,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/js/PageContent/ContentIndex.js":
-/*!********************************************!*\
-  !*** ./src/js/PageContent/ContentIndex.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ContentIndex\": () => (/* binding */ ContentIndex)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _components_Preloader_Preloader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Preloader/Preloader */ \"./src/js/components/Preloader/Preloader.js\");\n/* harmony import */ var _ContentTypeScript_ContentTypeScript_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ContentTypeScript/ContentTypeScript.tsx */ \"./src/js/PageContent/ContentTypeScript/ContentTypeScript.tsx\");\n\n\n\nvar ContentIndex = function ContentIndex() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", {\n    className: \"\"\n  }, \"\\u042D\\u0442\\u043E \\u0433\\u043B\\u0430\\u0432\\u043D\\u0430\\u044F \\u0441\\u0442\\u0440\\u0430\\u043D\\u0438\\u0446\\u0430\\u044B\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ContentTypeScript_ContentTypeScript_tsx__WEBPACK_IMPORTED_MODULE_2__.ContentTypeScript, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Preloader_Preloader__WEBPACK_IMPORTED_MODULE_1__.Preloader, null));\n};\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/PageContent/ContentIndex.js?");
-
-/***/ }),
-
 /***/ "./src/js/PageContent/ContentPersonal.js":
 /*!***********************************************!*\
   !*** ./src/js/PageContent/ContentPersonal.js ***!
@@ -147,7 +125,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"App\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router/esm/react-router.js\");\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _redux_rootReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./redux/rootReducer */ \"./src/js/redux/rootReducer.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _PageContent_ContentAuth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PageContent/ContentAuth */ \"./src/js/PageContent/ContentAuth.js\");\n/* harmony import */ var _PageContent_ContentIndex__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PageContent/ContentIndex */ \"./src/js/PageContent/ContentIndex.js\");\n/* harmony import */ var _PageContent_ContentPersonal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./PageContent/ContentPersonal */ \"./src/js/PageContent/ContentPersonal.js\");\n/* harmony import */ var _components_HeaderMenu_HeaderMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/HeaderMenu/HeaderMenu */ \"./src/js/components/HeaderMenu/HeaderMenu.tsx\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _components_Popap_Popap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Popap/Popap */ \"./src/js/components/Popap/Popap.js\");\n/* harmony import */ var _less_common_less__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../less/common.less */ \"./src/less/common.less\");\n/* harmony import */ var _HOC_PageContainer_PageContainer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./HOC/PageContainer/PageContainer */ \"./src/js/HOC/PageContainer/PageContainer.js\");\n/* harmony import */ var _PageContent_ContentTypeScript_ContentTypeScript_tsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./PageContent/ContentTypeScript/ContentTypeScript.tsx */ \"./src/js/PageContent/ContentTypeScript/ContentTypeScript.tsx\");\n/* harmony import */ var _Model_AppModel__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Model/AppModel */ \"./src/js/Model/AppModel.js\");\n/* harmony import */ var _Libs_Common__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Libs/Common */ \"./src/js/Libs/Common.js\");\n/* harmony import */ var _components_Header_Header_tsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/Header/Header.tsx */ \"./src/js/components/Header/Header.tsx\");\n\n\n // redux\n\n\n\n // component\n\n\n\n\n // style\n\n\n\n\n\n\n\n\n\nvar APP_STORE = (0,redux__WEBPACK_IMPORTED_MODULE_16__.createStore)(_redux_rootReducer__WEBPACK_IMPORTED_MODULE_2__.rootReducer, (0,redux__WEBPACK_IMPORTED_MODULE_16__.compose)(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()));\nvar App = function App() {\n  // Получить меню\n  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {\n    _Model_AppModel__WEBPACK_IMPORTED_MODULE_13__.APP_MODEL.getMenu().then(function (r) {\n      if ((0,_Libs_Common__WEBPACK_IMPORTED_MODULE_14__.checkRespForSuccess)(r)) {\n        APP_STORE.dispatch(setMainMenu(r.data));\n      }\n    });\n  }, []);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__.Provider, {\n    store: APP_STORE\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Header_Header_tsx__WEBPACK_IMPORTED_MODULE_15__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HOC_PageContainer_PageContainer__WEBPACK_IMPORTED_MODULE_11__.PageContainer, {\n    arrayClass: []\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.Route, {\n    exact: true,\n    path: \"/\",\n    component: _PageContent_ContentIndex__WEBPACK_IMPORTED_MODULE_5__.ContentIndex\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.Route, {\n    path: \"/auth/\",\n    component: _PageContent_ContentAuth__WEBPACK_IMPORTED_MODULE_4__.ContentAuth\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.Route, {\n    path: \"/personal\",\n    component: _PageContent_ContentPersonal__WEBPACK_IMPORTED_MODULE_6__.ContentPersonal\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.Route, {\n    path: \"/type-script\",\n    component: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_PageContent_ContentTypeScript_ContentTypeScript_tsx__WEBPACK_IMPORTED_MODULE_12__.ContentTypeScript, null)\n  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Popap_Popap__WEBPACK_IMPORTED_MODULE_9__[\"default\"], null));\n};\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.StrictMode, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(App, null)), document.getElementById('app'));\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"App\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router/esm/react-router.js\");\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _redux_rootReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./redux/rootReducer */ \"./src/js/redux/rootReducer.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _PageContent_ContentAuth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PageContent/ContentAuth */ \"./src/js/PageContent/ContentAuth.js\");\n/* harmony import */ var _PageContent_ContentIndex_ContentIndex__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PageContent/ContentIndex/ContentIndex */ \"./src/js/PageContent/ContentIndex/ContentIndex.tsx\");\n/* harmony import */ var _PageContent_ContentPersonal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./PageContent/ContentPersonal */ \"./src/js/PageContent/ContentPersonal.js\");\n/* harmony import */ var _components_HeaderMenu_HeaderMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/HeaderMenu/HeaderMenu */ \"./src/js/components/HeaderMenu/HeaderMenu.tsx\");\n/* harmony import */ var _HOC_PageContainer_PageContainer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./HOC/PageContainer/PageContainer */ \"./src/js/HOC/PageContainer/PageContainer.tsx\");\n/* harmony import */ var _PageContent_ContentTypeScript_ContentTypeScript_tsx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./PageContent/ContentTypeScript/ContentTypeScript.tsx */ \"./src/js/PageContent/ContentTypeScript/ContentTypeScript.tsx\");\n/* harmony import */ var _Model_AppModel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Model/AppModel */ \"./src/js/Model/AppModel.js\");\n/* harmony import */ var _Libs_Common__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Libs/Common */ \"./src/js/Libs/Common.js\");\n/* harmony import */ var _components_Popap_Popap__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/Popap/Popap */ \"./src/js/components/Popap/Popap.js\");\n/* harmony import */ var _components_Header_Header_tsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Header/Header.tsx */ \"./src/js/components/Header/Header.tsx\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _app_less__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app.less */ \"./src/js/app.less\");\n\n\n // redux\n\n\n\n // component\n\n\n\n\n\n\n\n\n\n\n // style\n\n\n\nvar APP_STORE = (0,redux__WEBPACK_IMPORTED_MODULE_16__.createStore)(_redux_rootReducer__WEBPACK_IMPORTED_MODULE_2__.rootReducer, (0,redux__WEBPACK_IMPORTED_MODULE_16__.compose)(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()));\nvar App = function App() {\n  // Получить меню\n  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {\n    _Model_AppModel__WEBPACK_IMPORTED_MODULE_10__.APP_MODEL.getMenu().then(function (r) {\n      if ((0,_Libs_Common__WEBPACK_IMPORTED_MODULE_11__.checkRespForSuccess)(r)) {\n        APP_STORE.dispatch(setMainMenu(r.data));\n      }\n    });\n  }, []);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__.Provider, {\n    store: APP_STORE\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Header_Header_tsx__WEBPACK_IMPORTED_MODULE_13__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HOC_PageContainer_PageContainer__WEBPACK_IMPORTED_MODULE_8__.PageContainer, {\n    arrayClass: []\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.Route, {\n    exact: true,\n    path: \"/\",\n    component: _PageContent_ContentIndex_ContentIndex__WEBPACK_IMPORTED_MODULE_5__.ContentIndex\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.Route, {\n    path: \"/auth/\",\n    component: _PageContent_ContentAuth__WEBPACK_IMPORTED_MODULE_4__.ContentAuth\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.Route, {\n    path: \"/personal\",\n    component: _PageContent_ContentPersonal__WEBPACK_IMPORTED_MODULE_6__.ContentPersonal\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__.Route, {\n    path: \"/type-script\",\n    component: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_PageContent_ContentTypeScript_ContentTypeScript_tsx__WEBPACK_IMPORTED_MODULE_9__.ContentTypeScript, null)\n  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Popap_Popap__WEBPACK_IMPORTED_MODULE_12__[\"default\"], null));\n};\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.StrictMode, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(App, null)), document.getElementById('app'));\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/app.js?");
 
 /***/ }),
 
@@ -458,6 +436,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/js/PageContent/ContentIndex/contentIndex.less":
+/*!***********************************************************!*\
+  !*** ./src/js/PageContent/ContentIndex/contentIndex.less ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/PageContent/ContentIndex/contentIndex.less?");
+
+/***/ }),
+
+/***/ "./src/js/app.less":
+/*!*************************!*\
+  !*** ./src/js/app.less ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/app.less?");
+
+/***/ }),
+
 /***/ "./src/js/components/Header/header.less":
 /*!**********************************************!*\
   !*** ./src/js/components/Header/header.less ***!
@@ -466,17 +466,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/components/Header/header.less?");
-
-/***/ }),
-
-/***/ "./src/less/common.less":
-/*!******************************!*\
-  !*** ./src/less/common.less ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/less/common.less?");
 
 /***/ }),
 
@@ -1334,6 +1323,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/js/HOC/PageContainer/PageContainer.tsx":
+/*!****************************************************!*\
+  !*** ./src/js/HOC/PageContainer/PageContainer.tsx ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"PageContainer\": () => (/* binding */ PageContainer)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar __spreadArray = (undefined && undefined.__spreadArray) || function (to, from, pack) {\n    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {\n        if (ar || !(i in from)) {\n            if (!ar) ar = Array.prototype.slice.call(from, 0, i);\n            ar[i] = from[i];\n        }\n    }\n    return to.concat(ar || Array.prototype.slice.call(from));\n};\n\nvar PageContainer = function (props) {\n    var classNames = __spreadArray(__spreadArray([], props.arrayClass, true), ['container-fluide'], false);\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"main\", { className: classNames.join(\" \") }, props.children));\n};\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/HOC/PageContainer/PageContainer.tsx?");
+
+/***/ }),
+
+/***/ "./src/js/HOC/Section/Section.tsx":
+/*!****************************************!*\
+  !*** ./src/js/HOC/Section/Section.tsx ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Section\": () => (/* binding */ Section)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar Section = function (props) {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"section\", { className: props.addedClassName + \" section\" },\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: \"container\" }, props.children)));\n};\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/HOC/Section/Section.tsx?");
+
+/***/ }),
+
+/***/ "./src/js/PageContent/ContentIndex/ContentIndex.tsx":
+/*!**********************************************************!*\
+  !*** ./src/js/PageContent/ContentIndex/ContentIndex.tsx ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ContentIndex\": () => (/* binding */ ContentIndex)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _components_Preloader_Preloader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Preloader/Preloader */ \"./src/js/components/Preloader/Preloader.js\");\n/* harmony import */ var _HOC_Section_Section__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../HOC/Section/Section */ \"./src/js/HOC/Section/Section.tsx\");\n/* harmony import */ var _contentIndex_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contentIndex.less */ \"./src/js/PageContent/ContentIndex/contentIndex.less\");\n\n// import { Preloader } from '../components/Preloader/Preloader'\n// import { Section } from '../HOC/Section/Section'\n\n\n\nvar ContentIndex = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HOC_Section_Section__WEBPACK_IMPORTED_MODULE_2__.Section, { addedClassName: \"section-hero\" },\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: \"row\" },\n                react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: \"col-12 col-lg-6 d-flex\" },\n                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", { className: \"dark-text m-auto\" },\n                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"b\", null,\n                            \"\\u0423 \\u043F\\u0440\\u043E\\u0433\\u0440\\u0430\\u043C\\u043C\\u0438\\u0441\\u0442\\u0430 \\u043D\\u0435\\u0442 \",\n                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", { className: \"bright-text\" }, \"\\u0446\\u0435\\u043B\\u0438\"),\n                            \", \\u0435\\u0441\\u0442\\u044C \\u0442\\u043E\\u043B\\u044C\\u043A\\u043E \",\n                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", { className: \"bright-text\" }, \"\\u043F\\u0443\\u0442\\u044C...\")))),\n                react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: \"col-12 col-lg-6\" },\n                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: \"img-wrapper\" },\n                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", { src: '/uploads/programer.gif', className: \"\" }))))),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Preloader_Preloader__WEBPACK_IMPORTED_MODULE_1__.Preloader, null)));\n};\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/PageContent/ContentIndex/ContentIndex.tsx?");
+
+/***/ }),
+
 /***/ "./src/js/PageContent/ContentTypeScript/ContentTypeScript.tsx":
 /*!********************************************************************!*\
   !*** ./src/js/PageContent/ContentTypeScript/ContentTypeScript.tsx ***!
@@ -1352,7 +1374,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Header\": () => (/* binding */ Header)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ \"./node_modules/react-bootstrap/esm/Navbar.js\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ \"./node_modules/react-bootstrap/esm/Container.js\");\n/* harmony import */ var _HeaderMenu_HeaderMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../HeaderMenu/HeaderMenu */ \"./src/js/components/HeaderMenu/HeaderMenu.tsx\");\n/* harmony import */ var _header_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header.less */ \"./src/js/components/Header/header.less\");\n/* harmony import */ var _Logo_Logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Logo/Logo */ \"./src/js/components/Header/Logo/Logo.tsx\");\n\n\n\n\n\nvar Header = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"header\", { className: \"header\" },\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__[\"default\"], { bg: \"light\", expand: \"lg\" },\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null,\n                react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__[\"default\"].Brand, { href: \"#home\" },\n                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Logo_Logo__WEBPACK_IMPORTED_MODULE_3__.Logo, { src: \"/uploads/myLogo.png\" })),\n                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HeaderMenu_HeaderMenu__WEBPACK_IMPORTED_MODULE_1__.HeaderMenu, null)))));\n};\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/components/Header/Header.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Header\": () => (/* binding */ Header)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ \"./node_modules/react-bootstrap/esm/Navbar.js\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ \"./node_modules/react-bootstrap/esm/Container.js\");\n/* harmony import */ var _HeaderMenu_HeaderMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../HeaderMenu/HeaderMenu */ \"./src/js/components/HeaderMenu/HeaderMenu.tsx\");\n/* harmony import */ var _header_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header.less */ \"./src/js/components/Header/header.less\");\n/* harmony import */ var _Logo_Logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Logo/Logo */ \"./src/js/components/Header/Logo/Logo.tsx\");\n\n\n\n\n\nvar Header = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"header\", { className: \"header shadow\" },\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__[\"default\"], { bg: \"light\", expand: \"lg\" },\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__[\"default\"], { fluid: true },\n                react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__[\"default\"].Brand, { href: \"#home\" },\n                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Logo_Logo__WEBPACK_IMPORTED_MODULE_3__.Logo, { src: \"/uploads/myLogo.png\" })),\n                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HeaderMenu_HeaderMenu__WEBPACK_IMPORTED_MODULE_1__.HeaderMenu, null)))));\n};\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/components/Header/Header.tsx?");
 
 /***/ }),
 
@@ -1374,7 +1396,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"HeaderMenu\": () => (/* binding */ HeaderMenu)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ \"./node_modules/react-bootstrap/esm/Navbar.js\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap */ \"./node_modules/react-bootstrap/esm/Nav.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n\n\n\nvar headerMenu = function (_a) {\n    var _b = _a.mainMenu, mainMenu = _b === void 0 ? [{\n            name: \"About\",\n            href: '#'\n        }] : _b;\n    var testMenu = [{\n            name: \"About\",\n            href: '#'\n        }];\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__[\"default\"].Toggle, { \"aria-controls\": \"basic-navbar-nav\" }),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__[\"default\"].Collapse, { id: \"basic-navbar-nav\" },\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__[\"default\"], { className: \"my-auto ml-auto\" }, testMenu.map(function (item, key) {\n                return react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__[\"default\"].Link, { key: key, href: item.href }, item.name);\n            })))));\n};\nvar mapStateToProps = function (state) { return state.menu; };\nvar HeaderMenu = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, null)(headerMenu);\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/components/HeaderMenu/HeaderMenu.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"HeaderMenu\": () => (/* binding */ HeaderMenu)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ \"./node_modules/react-bootstrap/esm/Navbar.js\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap */ \"./node_modules/react-bootstrap/esm/Nav.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n\n\n\nvar headerMenu = function (_a) {\n    var _b = _a.mainMenu, mainMenu = _b === void 0 ? [{\n            name: \"About\",\n            href: '#'\n        }] : _b;\n    var testMenu = [{\n            name: \"About\",\n            href: '#'\n        }];\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__[\"default\"].Toggle, { \"aria-controls\": \"basic-navbar-nav\" }),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__[\"default\"].Collapse, { id: \"basic-navbar-nav\" },\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__[\"default\"], { className: \"my-auto ml-auto\" }, testMenu.map(function (item, key) {\n                return react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__[\"default\"].Link, { key: key, href: item.href }, item.name);\n            })),\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", { className: \"btn btn-bright ml-lg-3\" }, \"\\u0432\\u043E\\u0439\\u0442\\u0438\"))));\n};\nvar mapStateToProps = function (state) { return state.menu; };\nvar HeaderMenu = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, null)(headerMenu);\n\n\n//# sourceURL=webpack://test.kupi-website.ru/./src/js/components/HeaderMenu/HeaderMenu.tsx?");
 
 /***/ }),
 
@@ -1444,28 +1466,6 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js ***!
-  \*********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _arrayLikeToArray)\n/* harmony export */ });\nfunction _arrayLikeToArray(arr, len) {\n  if (len == null || len > arr.length) len = arr.length;\n\n  for (var i = 0, arr2 = new Array(len); i < len; i++) {\n    arr2[i] = arr[i];\n  }\n\n  return arr2;\n}\n\n//# sourceURL=webpack://test.kupi-website.ru/./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _arrayWithoutHoles)\n/* harmony export */ });\n/* harmony import */ var _arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayLikeToArray.js */ \"./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js\");\n\nfunction _arrayWithoutHoles(arr) {\n  if (Array.isArray(arr)) return (0,_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(arr);\n}\n\n//# sourceURL=webpack://test.kupi-website.ru/./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js?");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js ***!
@@ -1510,28 +1510,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js ***!
-  \********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _iterableToArray)\n/* harmony export */ });\nfunction _iterableToArray(iter) {\n  if (typeof Symbol !== \"undefined\" && iter[Symbol.iterator] != null || iter[\"@@iterator\"] != null) return Array.from(iter);\n}\n\n//# sourceURL=webpack://test.kupi-website.ru/./node_modules/@babel/runtime/helpers/esm/iterableToArray.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _nonIterableSpread)\n/* harmony export */ });\nfunction _nonIterableSpread() {\n  throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\");\n}\n\n//# sourceURL=webpack://test.kupi-website.ru/./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js?");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/helpers/esm/objectSpread2.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js ***!
@@ -1562,28 +1540,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _setPrototypeOf)\n/* harmony export */ });\nfunction _setPrototypeOf(o, p) {\n  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {\n    o.__proto__ = p;\n    return o;\n  };\n\n  return _setPrototypeOf(o, p);\n}\n\n//# sourceURL=webpack://test.kupi-website.ru/./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _toConsumableArray)\n/* harmony export */ });\n/* harmony import */ var _arrayWithoutHoles_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithoutHoles.js */ \"./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js\");\n/* harmony import */ var _iterableToArray_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArray.js */ \"./node_modules/@babel/runtime/helpers/esm/iterableToArray.js\");\n/* harmony import */ var _unsupportedIterableToArray_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./unsupportedIterableToArray.js */ \"./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js\");\n/* harmony import */ var _nonIterableSpread_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nonIterableSpread.js */ \"./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js\");\n\n\n\n\nfunction _toConsumableArray(arr) {\n  return (0,_arrayWithoutHoles_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(arr) || (0,_iterableToArray_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(arr) || (0,_unsupportedIterableToArray_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(arr) || (0,_nonIterableSpread_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n}\n\n//# sourceURL=webpack://test.kupi-website.ru/./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js ***!
-  \*******************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _unsupportedIterableToArray)\n/* harmony export */ });\n/* harmony import */ var _arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayLikeToArray.js */ \"./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js\");\n\nfunction _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return (0,_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return (0,_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(o, minLen);\n}\n\n//# sourceURL=webpack://test.kupi-website.ru/./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js?");
 
 /***/ })
 

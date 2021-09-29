@@ -8,18 +8,20 @@ import { rootReducer } from './redux/rootReducer';
 import { Provider } from 'react-redux';
 // component
 import { ContentAuth } from './PageContent/ContentAuth';
-import { ContentIndex } from './PageContent/ContentIndex';
+import { ContentIndex } from './PageContent/ContentIndex/ContentIndex';
 import { ContentPersonal } from './PageContent/ContentPersonal';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
-// style
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Popap from './components/Popap/Popap';
-import '../less/common.less';
 import { PageContainer } from './HOC/PageContainer/PageContainer';
 import { ContentTypeScript } from './PageContent/ContentTypeScript/ContentTypeScript.tsx';
 import { APP_MODEL } from './Model/AppModel';
 import { checkRespForSuccess } from './Libs/Common';
+import Popap from './components/Popap/Popap';
 import { Header } from './components/Header/Header.tsx';
+
+
+// style
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './app.less'
 
 
 

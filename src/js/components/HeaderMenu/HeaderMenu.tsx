@@ -40,6 +40,7 @@ const headerMenu = ({
             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
           </NavDropdown> */}
         </Nav>
+        <button className="btn btn-bright ml-lg-3">войти</button>
       </Navbar.Collapse>
     </React.Fragment>
   )
