@@ -1,0 +1,19 @@
+// routers for user
+const express = require('express')
+const routerUser = express.Router()
+
+const db = require('./../../config/db')
+
+// get all users
+
+routerUser.get('/api/users/', (request, response) => {
+    console.log('Send')
+    response.send(JSON.stringify({ success: true }))
+    
+    // db.query('SELECT * FROM user', (err, res, fields) => {
+    //     response.send(JSON.stringify(res || err));
+    // })
+
+});
+
+module.exports = routerUser
