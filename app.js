@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 8081;
+const port = 8080;
 const app = express();
 const path = require('path')
 
@@ -8,7 +8,7 @@ const routerSettings = require('./api/appSettings/appSettings')
 
 
 // routerUser
-app.use('/api/user/', routerUser)
+app.use('/api/users/', routerUser)
 
 // site settings
 app.use('/api/settings/', routerSettings)
@@ -17,6 +17,7 @@ app.use('/api/settings/', routerSettings)
 app.get('/api/test/', (req, res) => {
     res.send(JSON.stringify({ success: true }))
 })
+
 
 
 app.use(express.static(path.join(__dirname, 'public')));

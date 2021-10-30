@@ -5,7 +5,7 @@ import { Nav } from 'react-bootstrap';
 export const HeaderMenuItem = ({
     linkHref = '#', 
     title = '',
-    id: '',
+    id= '',
     children = []
 }) => {
     return (

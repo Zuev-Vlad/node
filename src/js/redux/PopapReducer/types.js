@@ -4,3 +4,8 @@ export const SET_TITLE_POPAP = 'SET_TITLE_POPAP';
 export const SET_ON_SAVE_POPAP = 'SET_ON_SAVE_POPAP';
 export const SET_ON_CLOSE_POPAP = 'SET_IS_OPEN_POPAP';
 export const SET_SIZE_POPAP = 'SET_IS_OPEN_POPAP';
+export const SET_IS_SHOW_FOOTER_POPAP = 'SET_IS_SHOW_FOOTER_POPAP';
+
+
+// 
+export const SET_MAIN_MENU = 'SET_MAIN_MENU'

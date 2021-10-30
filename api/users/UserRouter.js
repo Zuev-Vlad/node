@@ -1,6 +1,7 @@
 // routers for user
 const express = require('express')
 const routerUser = express.Router()
+const jwt = require('jsonwebtoken')
 
 const DB = require('./../../config/db')
 const libs = require('./../Libs/Libs')
@@ -17,10 +18,11 @@ routerUser.get('/', (req, res) => {
         .promise()
         .query('SELECT * FROM `user`')
         .then(([rows, fields]) => {
+            // console.log(rows)
             res.send(libs.sendRespSuccess(rows))
+            db.con.end()
         })
-        .catch(console.log)
-        .then(() => db.connecting.end());
+        .catch(console.log);
 })
 
 routerUser.post('/', urlencodedParser, (req, res) => {

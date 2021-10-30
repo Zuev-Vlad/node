@@ -1,9 +1,20 @@
-import React, { useEffect } from 'react'
+import * as React from 'react';
 import { connect } from 'react-redux'
-import { setIsOpenPopap } from '../../redux/PopapReducer/actions'
+import { setIsOpenPopap, TSetIsOpenPopap, TSetOnClosePopap, TSetOnSavePopap } from '../../redux/PopapReducer/actions'
+import { IRootReducerState } from '../../redux/rootReducer';
 
 
-
+export interface IPopapProps {
+  isOpen?: boolean
+  title?: string | JSX.Element
+  content?: string | JSX.Element
+  onSave?: () => void
+  onClose?: () => void
+  setIsOpenPopap?: TSetIsOpenPopap,
+  saveBtnText?: any
+  closeBtnText?: any
+  setTitlePopap?: string | JSX.Element
+}
 
 const Popap = ({
   isOpen = false,
@@ -14,13 +25,11 @@ const Popap = ({
   setIsOpenPopap,
   saveBtnText = 'Сохранить',
   closeBtnText = 'Закрыть',
-  setTitlePopap
-}) => {
+}: IPopapProps) => {
 
-  useEffect(() => {
-    console.log({ isOpen })
-  }, [isOpen]);
-
+  React.useEffect(() => {
+    console.log({ title })
+  }, [title])
   return (
     <React.Fragment>
       {isOpen &&
@@ -47,7 +56,7 @@ const Popap = ({
     </React.Fragment>
   )
 }
-const mapStateToProps = state => {
+const mapStateToProps = (state: IRootReducerState) => {
   return state.popap
 }
 

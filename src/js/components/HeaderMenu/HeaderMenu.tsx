@@ -1,25 +1,37 @@
 import * as React from 'react'
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { connect } from 'react-redux';
-// import * as HeaderMenu from '../../../../node/src/js/components/HeaderMenu/HeaderMenu';
-
+import { Nav, Navbar } from 'react-bootstrap'
+import { connect } from 'react-redux'
+import { setContentPopap, setIsOpenPopap, setTitlePopap, TSetContentPopap, TSetIsOpenPopap, TSetTitlePopap } from '../../redux/PopapReducer/actions'
+import { IRootReducerState } from '../../redux/rootReducer'
+import { IMenuItem } from '../../redux/SettingsReducer/actions'
+import { IStateSettings } from '../../redux/SettingsReducer/SettingsReducer'
+import { AuthContentPopap } from '../Auth/AuthContentPopap/AuthContentPopap'
+import { Link } from 'react-router-dom'
 
 interface IHeaderMenu {
-  mainMenu?: Array<any>
+  setIsOpenPopap?: TSetIsOpenPopap
+  setContentPopap?: TSetContentPopap
+  setTitlePopap?:TSetTitlePopap
+  settings?: IStateSettings
 }
 
-const headerMenu = ({
-  mainMenu = [{
-    name: "About",
-    href: '#'
-  }]
+export const headerMenu = ({
+  setIsOpenPopap,
+  setContentPopap,
+  setTitlePopap,
+  settings
 }: IHeaderMenu): JSX.Element => {
-
 
   const testMenu = [{
     name: "About",
     href: '#'
   }]
+
+  const openAuthPopap = () => {
+    setTitlePopap('Авторизация')
+    setContentPopap(<AuthContentPopap />)
+    setIsOpenPopap(true)
+  }
 
   return (
     <React.Fragment>
@@ -27,25 +39,24 @@ const headerMenu = ({
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="my-auto ml-auto">
           
-          {testMenu.map((item, key) => {
-            return  <Nav.Link key={key} href={item.href}>{item.name}</Nav.Link>
-          })}
-          {/* <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-          </NavDropdown> */}
+          {settings.mainMenu.map((item: IMenuItem, key) => (
+            <Link key={key} className="nav-link" to={item.url}>{item.title}</Link>
+          ))}
+
         </Nav>
-        <button className="btn btn-bright ml-lg-3">войти</button>
+        <button className="btn btn-bright ml-lg-3" onClick={openAuthPopap}>войти</button>
       </Navbar.Collapse>
+
     </React.Fragment>
   )
 }
 
-const mapStateToProps = (state: any) => state.menu
+const mapStateToProps = (state: IRootReducerState) => state
+const mapDispatchState = {
+  setIsOpenPopap,
+  setContentPopap,
+  setTitlePopap
+}
 
-export const HeaderMenu = connect(mapStateToProps, null)(headerMenu)
+
+export const HeaderMenu = connect(mapStateToProps, mapDispatchState)(headerMenu)

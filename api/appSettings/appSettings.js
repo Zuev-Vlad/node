@@ -16,9 +16,9 @@ routerSettings.get('/menu/', (req, res) => {
         .query('SELECT * FROM `menu_item`')
         .then(([rows, fields]) => {
             res.send(db.getSuccessTemplate({ data: rows }))
+            db.con.end()
         })
         .catch(console.log)
-        .then(() => db.connecting.end());
 })
 
 

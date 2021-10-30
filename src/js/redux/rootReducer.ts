@@ -8,9 +8,17 @@ import {
     SettingsReducer
 } from './SettingsReducer/SettingsReducer';
 
+export interface IRootReducerState {
+    popap: any
+    settings: any
+}
 
+export interface IReducerAction<T> {
+    type: string
+    payload?: T | string
+}
 
 export const rootReducer = combineReducers({
     popap: PopapReducer,
-    menu: SettingsReducer,
+    settings: SettingsReducer,
 })
