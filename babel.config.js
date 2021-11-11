@@ -3,4 +3,5 @@ module.exports = {
         "transform-regenerator",
         "@babel/plugin-transform-runtime"
     ],
+    presets: ['@babel/preset-env', '@babel/preset-react'],
 }

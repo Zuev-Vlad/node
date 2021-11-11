@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test":"jest",
+        "start": "webpack --watch --mode=development",
         "w_dev": "webpack --watch --mode=development",
         "web_build": "webpack --watch --mode=production"
     },
@@ -40,14 +41,17 @@
         "@babel/preset-env": "^7.12.13",
         "@babel/preset-react": "^7.12.13",
         "@types/react-router-dom": "^5.3.2",
+        "babel-jest": "^27.3.1",
         "babel-loader": "^8.2.2",
         "babel-plugin-transform-runtime": "^6.23.0",
         "babel-upgrade": "^1.0.1",
         "clean-css": "^5.2.2",
         "css-loader": "^5.2.6",
         "css-minimizer-webpack-plugin": "^3.0.2",
+        "jest": "^27.3.1",
         "less": "^4.1.1",
         "less-loader": "^9.1.0",
+        "react-test-renderer": "^17.0.2",
         "ts-loader": "^9.2.5",
         "typescript": "^4.4.3"
     }

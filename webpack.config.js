@@ -13,7 +13,6 @@ module.exports = (env, argv) => {
     console.log('mode ', ENV)
     return {
         entry: {
-            test: defPath.src + '/js/test.js',
             rootApp: defPath.src + '/js/app.js',
         },
         output: {
