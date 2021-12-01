@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test":"jest",
+        "test": "jest",
         "start": "webpack --watch --mode=development",
         "w_dev": "webpack --watch --mode=development",
         "web_build": "webpack --watch --mode=production"
@@ -22,6 +22,7 @@
         "express-session": "^1.17.2",
         "jsonwebtoken": "^8.5.1",
         "mini-css-extract-plugin": "^1.6.0",
+        "multer": "^1.4.3",
         "mysql": "^2.18.1",
         "mysql2": "^2.3.0",
         "nodemon": "^2.0.7",

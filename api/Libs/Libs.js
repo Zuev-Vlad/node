@@ -4,6 +4,12 @@ const Libs = {
             success: true,
             data: params
         })
+    },
+    sendRespError(params = {}) {
+        return JSON.stringify({
+            success: false,
+            data: params
+        })
     }
 }
 
