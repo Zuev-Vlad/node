@@ -12,7 +12,7 @@ module.exports = class USER_MODEL {
         return new Promise(res => {
             db.connecting()
                 .promise()
-                .query(`SELECT * FROM user WHERE login = ${login}`)
+                .query(`SELECT * FROM user WHERE login = '${login}'`)
                 .then(([rows, fields]) => {
                     res(rows)
                     db.con.end()
